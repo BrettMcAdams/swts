@@ -1,0 +1,174 @@
+.home {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.home__sponsor {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home__sponsor > h2 {
+    padding: 30px;
+    font-size: 1.8rem;
+    color: #426744;
+    font-weight: 400;
+}
+
+.sponsor__image {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.sponsor__image > .imageLg {
+    object-fit: cover;
+    width: 600px;
+}
+
+.sponsor__image > .imageSm {
+    height: 200px;
+    width: 200px;
+}
+
+video {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+video:focus {
+    outline: none;
+}
+
+section {
+    display: flex;
+}
+
+.section__welcome {
+    width: 100%;
+    color: #426744;
+    margin: 30px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__welcome > h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.section__welcome > p {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 70%;
+    line-height: 45px;
+    font-style: italic;
+}
+
+.home__signUp {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.signUp {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signUp > h2 {
+    color: #426744;
+    padding-top: 30px;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.signUp > img {
+    height: 400px;
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+.signUp > p {
+    color: #426744;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.home__map {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home__map > iframe {
+    width: 100%;
+}
+
+.section__form {
+    margin: 40px auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.section__form > h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #426744;
+    text-align: center;
+}
+
+.section__form > p {
+    text-align: center;
+    color: #426744;
+    font-style: italic;
+}
+
+@media screen and ( max-width: 1000px ) {
+    .home__signUp {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and ( max-width: 600px ) {
+    .sponsor__image > .imageLg {
+        display: none;
+    }
+    video {
+        margin-top: 10px;
+    }
+    .home__sponsor > h2 {
+        padding: 5px;
+    }
+    .signUp > img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and ( min-width: 600px ) {
+    .sponsor__image > .imageSm {
+        display: none;
+    }
+
+}
