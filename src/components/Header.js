@@ -3,6 +3,7 @@ import logo from "../images/swts.jpg";
 import "../styles/Header.css";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
 
 const Header = () => {
   return (
@@ -10,18 +11,21 @@ const Header = () => {
       <div className="header__topLeft">
         <img src={logo} alt="shoot with the stars logo" />
       </div>
-      <div className="header__bottom">
-        <nav>
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
+        <nav className="nav">
           <Link className="link" to="/">
             Home
           </Link>
           <Link className="link" to="/sponsorship">
             Sponsorship &<br></br> Registration
           </Link>
-          <a href="">About</a>
-          <a href="">Gallery</a>
+          <Link className="link" to="/about">
+            About
+          </Link>
+          <Link className="link" to="/gallery">
+            Gallery
+          </Link>
         </nav>
-      </div>
       <div className="header__topRight">
         <Button
           size="large"
@@ -33,7 +37,7 @@ const Header = () => {
             fontSize: "1.3rem",
             color: "white",
           }}
-          href=""
+          href="https://form.jotform.com/200624989336160"
         >
           REGISTER
         </Button>

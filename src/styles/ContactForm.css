@@ -1,0 +1,29 @@
+.section__form {
+    margin: 40px auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.section__form > h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #426744;
+    text-align: center;
+}
+
+.section__form > p {
+    text-align: center;
+    color: #426744;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}

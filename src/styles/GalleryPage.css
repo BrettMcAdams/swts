@@ -1,0 +1,32 @@
+.gallery {
+}
+
+.gallery > h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #426744;
+    font-weight: 400;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.gallery__button {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.gallery__container {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1201;
+}
+
+@media screen and ( max-width: 1000px ) {
+    .gallery {
+        margin-top: 100px;
+    }
+    .gallery__container {
+        width: 100%;
+    }
+}

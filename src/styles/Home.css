@@ -108,6 +108,10 @@ section {
     line-height: 30px;
 }
 
+.signUp > a {
+    text-decoration: none;
+}
+
 .home__map {
     width: 100%;
     margin: 0 auto;
@@ -116,25 +120,6 @@ section {
 
 .home__map > iframe {
     width: 100%;
-}
-
-.section__form {
-    margin: 40px auto;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.section__form > h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #426744;
-    text-align: center;
 }
 
 .section__form > p {
@@ -147,7 +132,9 @@ section {
     .home__signUp {
         flex-direction: column;
     }
-
+    .home__sponsor {
+        padding-top: 100px;
+    }
 }
 
 @media screen and ( max-width: 600px ) {
